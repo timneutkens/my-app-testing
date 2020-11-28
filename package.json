@@ -1,7 +1,9 @@
 {
+  "private": true,
   "name": "my-app",
   "version": "1.0.0",
   "repository": "git@github.com:timneutkens/my-app-testing.git",
   "author": "Tim Neutkens <timneutkens@me.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": ["packages/*"]
 }
