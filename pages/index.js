@@ -1,3 +1,13 @@
-export default function Hello() {
-  return <div>test</div>
+import { myValue } from "../test.json";
+
+export function getStaticProps() {
+  return {
+    props: {
+      myValue,
+    },
+  };
+}
+
+export default function Hello({ props }) {
+  return <h1>{props.myValue}</h1>;
 }
