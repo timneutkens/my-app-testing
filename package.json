@@ -6,7 +6,7 @@
   "author": "Tim Neutkens <timneutkens@me.com>",
   "license": "MIT",
   "dependencies": {
-    "next": "^10.1.4-canary.7",
+    "next": "^10.1.4-canary.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
