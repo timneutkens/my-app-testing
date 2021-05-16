@@ -1,5 +1,5 @@
 export default function Home(props) {
-  return <pre>{JSON.stringify({ params: props.params }, null, " ")}</pre>;
+  return <pre>{JSON.stringify(props, null, " ")}</pre>;
 }
 
 export async function getServerSideProps({ params, req }) {
