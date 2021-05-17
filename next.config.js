@@ -1,4 +1,4 @@
 module.exports = {
-  trailingSlash: true,
-  // basePath: "/blog",
+  // trailingSlash: true,
+  basePath: "/blog",
 };
