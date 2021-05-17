@@ -5,7 +5,7 @@ export default function Home() {
   return <pre>{JSON.stringify(router, null, " ")}</pre>;
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       ssr: true,
