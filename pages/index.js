@@ -1,15 +1,20 @@
 import { useRouter } from "next/router";
 
-export default function Home() {
+export default function Home(props) {
   const router = useRouter();
-  return <pre>{JSON.stringify(router, null, " ")}</pre>;
+  return (
+    <>
+      <h1>{props.date}</h1>
+      <pre>{JSON.stringify(router, null, " ")}</pre>
+    </>
+  );
 }
 
 export async function getStaticProps() {
   return {
     revalidate: 1,
     props: {
-      ssr: true,
+      date: new Date(),
     },
   };
 }
