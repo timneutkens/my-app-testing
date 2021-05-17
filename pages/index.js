@@ -7,6 +7,7 @@ export default function Home() {
 
 export async function getStaticProps() {
   return {
+    revalidate: 1,
     props: {
       ssr: true,
     },
