@@ -8,10 +8,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "next": "^10.2.1-canary.8",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "scripts": {
+    "postinstall": "patch-package",
     "dev": "next",
     "build": "next build",
     "start": "next start"
