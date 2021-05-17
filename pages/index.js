@@ -14,7 +14,7 @@ export async function getStaticProps() {
   return {
     revalidate: 1,
     props: {
-      date: new Date(),
+      date: new Date().toString(),
     },
   };
 }
