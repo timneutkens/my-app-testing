@@ -1,12 +1,20 @@
-import Layout from "../layout.js";
-import Link from "next/link";
-export default function Home() {
+import { useRouter } from "next/router";
+
+export default function Home(props) {
+  const router = useRouter();
   return (
-    <Layout>
-      <h1>Hello World</h1>
-      <Link href="/about">
-        <a>To About</a>
-      </Link>
-    </Layout>
+    <>
+      <h1>{props.date}</h1>
+      <pre>{JSON.stringify(router, null, " ")}</pre>
+    </>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    revalidate: 1,
+    props: {
+      date: new Date().toString(),
+    },
+  };
 }
