@@ -1,11 +1,12 @@
 import Layout from "../layout.js";
 import Link from "next/link";
-export default function Home() {
+
+export default function About() {
   return (
     <Layout>
-      <h1>Hello World</h1>
-      <Link href="/about">
-        <a>To About</a>
+      <h1>About</h1>
+      <Link href="/">
+        <a>To Home</a>
       </Link>
     </Layout>
   );
